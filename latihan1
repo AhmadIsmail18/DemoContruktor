@@ -1,0 +1,26 @@
+package Pertemuan5;
+
+class Cube1 {
+    int length;
+    int breadth;
+    int height;
+    
+    public int GetVolume() {
+        return (length * breadth * height);
+    }
+    Cube1(int l, int b, int h) {
+        length = 1;
+        breadth = b;
+        height = h;
+    }
+}
+public class DemoContruktor1 {
+    public static void main(String[] args) {
+        Cube1 cubeObj1, cubeObj2;
+        cubeObj1 = new Cube1(5, 10, 20);
+        cubeObj2 = new Cube1(10, 20, 30);
+        System.out.println("Volume of Cube1 is : " + cubeObj1.GetVolume());
+        System.out.println("Volume of Cube2 is : " + cubeObj2.GetVolume());
+        
+    }
+}
