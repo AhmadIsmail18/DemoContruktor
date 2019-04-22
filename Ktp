@@ -1,9 +1,5 @@
 package image;
 
-
-
-
-
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -38,7 +34,7 @@ public class kartun {
         text1.setBounds(30,80,380,15);
         frame.add(text1);
         
-        text1 = new JLabel("Tempat/Tgl Lahir             : Cianjur, 24-02-1998");
+        text1 = new JLabel("Tempat/Tgl Lahir             : Cianjur, 15-02-2000");
         text1.setBounds(30,100,380,15);
         frame.add(text1);
         
@@ -49,19 +45,19 @@ public class kartun {
         text1.setBounds(270,120,380,15);
         frame.add(text1);
         
-        text1 = new JLabel("Alamat                               : KP.PANYAWEUYAN");
+        text1 = new JLabel("Alamat                               : KP.BAROS");
         text1.setBounds(30,140,380,15);
         frame.add(text1);
         
-        text1 = new JLabel("RT/RW                    : 004/004");
+        text1 = new JLabel("RT/RW                    : 003/004");
         text1.setBounds(65,160,380,15);
         frame.add(text1);
         
-        text1 = new JLabel("Kel/Desa                : CIHERANG");
+        text1 = new JLabel("Kel/Desa                : CIKAHURIPAN");
         text1.setBounds(65,180,380,15);
         frame.add(text1);
         
-        text1 = new JLabel("Kecamatan           : PACET");
+        text1 = new JLabel("Kecamatan           : GEKBRONG");
         text1.setBounds(65,200,380,15);
         frame.add(text1);
         
@@ -69,7 +65,7 @@ public class kartun {
         text1.setBounds(30,220,380,15);
         frame.add(text1);
         
-        text1 = new JLabel("Ststus Perkawinan         : BELUM KAWIN");
+        text1 = new JLabel("Status Perkawinan         : BELUM KAWIN");
         text1.setBounds(30,240,380,15);
         frame.add(text1);
         
@@ -95,7 +91,8 @@ public class kartun {
         
         Image gambar;
         JLabel label;
-        ImageIcon foto = new ImageIcon("H:\\netbeans\\ktpp\\src\\image\\NICE.jpg");
+        ImageIcon foto;
+            foto = new ImageIcon("C:\\Users\\Dasar\\Documents\\NetBeansProjects\\image\\src\\gambar\\download.jpg");
         
         label = new JLabel(foto);
         label.setLocation(400, 200);
@@ -105,7 +102,7 @@ public class kartun {
                 
         BufferedImage image = null;
         File f = null;
-        f = new File("H:\\netbeans\\ktpp\\src\\image\\back.jpg");
+        f = new File("C:\\Users\\Dasar\\Documents\\NetBeansProjects\\image\\src\\gambar\\download.jpg");
         image = new BufferedImage(80, 120, BufferedImage.TYPE_INT_ARGB);
         image = ImageIO.read(f);
     }
